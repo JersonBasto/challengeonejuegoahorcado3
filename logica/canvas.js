@@ -12,7 +12,7 @@ function dibujarCanvas() {
   tablero.stroke();
   tablero.closePath();
 }
-function dibujarLinea() {
+function dibujarLinea(palabraSecreta) {
   tablero.lineWidth = 3;
   tablero.lineCap = "round";
   tablero.lineJoin = "round";
