@@ -17,13 +17,19 @@ let heightA = tablero1.height;
 function escojerPalabraSecreta() {
   let newWords = localStorage.getItem("newWords");
   let nuevasPalabras = [];
+  let palabra = "";
   if (newWords) {
     if (newWords.length > 0) {
       nuevasPalabras = palabras.concat(newWords);
+      palabra =
+        nuevasPalabras[Math.floor(Math.random() * nuevasPalabras.length)];
+    } else {
+      palabra = palabras[Math.floor(Math.random() * nuevasPalabras.length)];
     }
+  } else {
+    palabra = palabras[Math.floor(Math.random() * nuevasPalabras.length)];
   }
-  let palabra =
-    nuevasPalabras[Math.floor(Math.random() * nuevasPalabras.length)];
+
   palabraSecreta = palabra;
   dibujarCanvas();
   dibujarLinea(palabraSecreta);
