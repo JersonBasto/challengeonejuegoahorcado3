@@ -1,4 +1,4 @@
-let palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML", "CSS"];
+var palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML", "CSS"];
 function escojerPalabraSecreta() {
   let newWords = localStorage.getItem("newWords");
   let nuevasPalabras = [];
