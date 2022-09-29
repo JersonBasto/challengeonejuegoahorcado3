@@ -1,18 +1,3 @@
-var palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML", "CSS"];
-function escojerPalabraSecreta() {
-  let newWords = localStorage.getItem("newWords");
-  let nuevasPalabras = [];
-  if (newWords) {
-    if (newWords.length > 0) {
-      nuevasPalabras = palabras.concat(newWords);
-    }
-  }
-  let palabra =
-    nuevasPalabras[Math.floor(Math.random() * nuevasPalabras.length)];
-  palabraSecreta = palabra;
-  dibujarCanvas();
-  dibujarLinea(palabraSecreta);
-}
 
 function dibujarCanvas() {
   console.log(widthA, heightA);

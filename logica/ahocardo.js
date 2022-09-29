@@ -1,8 +1,8 @@
-var palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML", "CSS"];
+let palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML", "CSS"];
 let tablero1 = document.getElementById("canvas-draw");
 let tablero = tablero1.getContext("2d");
 let teclado = document.getElementById("teclado");
-var palabraSecreta = "";
+let palabraSecreta = "";
 let contador = 0;
 let contadorErrores = 0;
 let palabrasIncorrectas = [];
@@ -14,7 +14,20 @@ let newWord = [];
 let widthA = tablero1.width;
 let heightA = tablero1.height;
 
-
+function escojerPalabraSecreta() {
+  let newWords = localStorage.getItem("newWords");
+  let nuevasPalabras = [];
+  if (newWords) {
+    if (newWords.length > 0) {
+      nuevasPalabras = palabras.concat(newWords);
+    }
+  }
+  let palabra =
+    nuevasPalabras[Math.floor(Math.random() * nuevasPalabras.length)];
+  palabraSecreta = palabra;
+  dibujarCanvas();
+  dibujarLinea(palabraSecreta);
+}
 
 function iniciarJuego() {
   document.getElementById("iniciar").style.display = "none";
