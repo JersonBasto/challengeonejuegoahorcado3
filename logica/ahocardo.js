@@ -26,7 +26,7 @@ function escojerPalabraSecreta() {
     nuevasPalabras[Math.floor(Math.random() * nuevasPalabras.length)];
   palabraSecreta = palabra;
   dibujarCanvas();
-  dibujarLinea();
+  dibujarLinea(palabraSecreta);
 }
 
 function iniciarJuego() {
