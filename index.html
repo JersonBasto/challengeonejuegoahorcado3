@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="Logo">
+      <h1><img id="imgLogo" src="Logo.png" /></h1>
+    </div>
+    <div id="botones">
+      <button id="iniciar" onclick="iniciarJuego()">Iniciar Juego</button>
+      <button id="add-word" onclick="agregarPalabra()">
+        Agregar nueva palabra
+      </button>
+      <input id="inputword" placeholder="Agregar palabra" />
+      <button id="addWord" onclick="addWord()">Agregar Palabra</button>
+      <button id="cancel" onclick="cancelar()">Cancelar</button>
+    </div>
+    <canvas id="canvas-draw" width="1000" height="800"></canvas>
+    <div id="teclado">
+      <div class="teclado-letra" id="A"><h1>A</h1></div>
+      <div class="teclado-letra" id="B"><h1>B</h1></div>
+      <div class="teclado-letra" id="C"><h1>C</h1></div>
+      <div class="teclado-letra" id="D"><h1>D</h1></div>
+      <div class="teclado-letra" id="E"><h1>E</h1></div>
+      <div class="teclado-letra" id="F"><h1>F</h1></div>
+      <div class="teclado-letra" id="G"><h1>G</h1></div>
+      <div class="teclado-letra" id="H"><h1>H</h1></div>
+      <div class="teclado-letra" id="I"><h1>I</h1></div>
+      <div class="teclado-letra" id="J"><h1>J</h1></div>
+      <div class="teclado-letra" id="K"><h1>K</h1></div>
+      <div class="teclado-letra" id="L"><h1>L</h1></div>
+      <div class="teclado-letra" id="M"><h1>M</h1></div>
+      <div class="teclado-letra" id="N"><h1>N</h1></div>
+      <div class="teclado-letra" id="Ñ"><h1>Ñ</h1></div>
+      <div class="teclado-letra" id="O"><h1>O</h1></div>
+      <div class="teclado-letra" id="P"><h1>P</h1></div>
+      <div class="teclado-letra" id="Q"><h1>Q</h1></div>
+      <div class="teclado-letra" id="R"><h1>R</h1></div>
+      <div class="teclado-letra" id="S"><h1>S</h1></div>
+      <div class="teclado-letra" id="T"><h1>T</h1></div>
+      <div class="teclado-letra" id="U"><h1>U</h1></div>
+      <div class="teclado-letra" id="V"><h1>V</h1></div>
+      <div class="teclado-letra" id="W"><h1>W</h1></div>
+      <div class="teclado-letra" id="X"><h1>X</h1></div>
+      <div class="teclado-letra" id="Y"><h1>Y</h1></div>
+      <div class="teclado-letra" id="Z"><h1>Z</h1></div>
+    </div>
+    <script src="./logica/canvas.js"></script>
+    <script src="./logica/ahocardo.js"></script>
+  </body>
+</html>
