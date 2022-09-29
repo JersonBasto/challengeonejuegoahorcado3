@@ -1,8 +1,8 @@
-let palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML", "CSS"];
+var palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML", "CSS"];
 let tablero1 = document.getElementById("canvas-draw");
 let tablero = tablero1.getContext("2d");
 let teclado = document.getElementById("teclado");
-let palabraSecreta = "";
+var palabraSecreta = "";
 let contador = 0;
 let contadorErrores = 0;
 let palabrasIncorrectas = [];
